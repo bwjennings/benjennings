@@ -4,6 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "dev": "vite dev --host",
+    "build": "vite build",
+    "preview": "vite preview --host",
     "storybook": "storybook dev --port 6006",
     "storybook:build": "storybook build"
   },
@@ -12,7 +15,8 @@
     "@storybook/addon-essentials": "8.2.10",
     "@storybook/addon-viewport": "8.2.10",
     "@storybook/web-components-vite": "^8.6.14",
-    "storybook": "^8.6.14"
+    "storybook": "^8.6.14",
+    "vite": "^6.4.1"
   },
   "dependencies": {
     "lit": "^3.3.1"
