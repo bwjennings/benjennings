@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Motion Principles · Fundamentals</title>
+    <link
+      rel="preload"
+      href="../../styles/fonts/MaterialSymbolsSharp-VariableFont_FILL,GRAD,opsz,wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../../styles/fonts/RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="../../styles/global/base.css" />
+        <script type="importmap">
+          {
+            "imports": {
+              "lit": "../../node_modules/lit/index.js",
+              "lit/": "../../node_modules/lit/",
+              "lit-html": "../../node_modules/lit-html/lit-html.js",
+              "lit-html/": "../../node_modules/lit-html/",
+              "lit-html/is-server.js": "../../node_modules/lit-html/is-server.js",
+              "lit-element": "../../node_modules/lit-element/lit-element.js",
+              "lit-element/": "../../node_modules/lit-element/",
+              "@lit/reactive-element": "../../node_modules/@lit/reactive-element/reactive-element.js",
+              "@lit/reactive-element/": "../../node_modules/@lit/reactive-element/"
+            }
+          }
+        </script>
+<script type="module" src="../../src/main.js"></script>
+  </head>
+  <body>
+    <my-app-layout active-href="fundamentals/index.html">
+      <section class="page-section" aria-label="Motion overview">
+        <p><a href="../index.html">&larr; Back to Fundamentals</a></p>
+        <h1>Motion principles</h1>
+        <p>
+          Timing curves, choreography rules, and orchestration examples that keep transitions
+          efficient and intentional throughout the UI.
+        </p>
+      </section>
+      <section class="page-section" aria-label="Motion guidelines">
+        <h2>Guideline highlights</h2>
+        <div class="page-card-grid">
+          <my-card title="Core durations">
+            <my-badge label="Ease in-out"></my-badge>
+            <my-badge variant="brand" label="120ms"></my-badge>
+          </my-card>
+          <my-card title="Entrance choreography">
+            <my-badge label="Cascade"></my-badge>
+            <my-badge variant="brand" label="Breakpoints"></my-badge>
+          </my-card>
+          <my-card title="Interactive feedback">
+            <my-badge label="Micro"></my-badge>
+            <my-badge variant="brand" label="Touch"></my-badge>
+          </my-card>
+        </div>
+      </section>
+    </my-app-layout>
+  </body>
+</html>

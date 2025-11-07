@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Designs · Lit Web Component Demo</title>
+    <link
+      rel="preload"
+      href="../styles/fonts/MaterialSymbolsSharp-VariableFont_FILL,GRAD,opsz,wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../styles/fonts/RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="../styles/global/base.css" />
+        <script type="importmap">
+          {
+            "imports": {
+              "lit": "../node_modules/lit/index.js",
+              "lit/": "../node_modules/lit/",
+              "lit-html": "../node_modules/lit-html/lit-html.js",
+              "lit-html/": "../node_modules/lit-html/",
+              "lit-html/is-server.js": "../node_modules/lit-html/is-server.js",
+              "lit-element": "../node_modules/lit-element/lit-element.js",
+              "lit-element/": "../node_modules/lit-element/",
+              "@lit/reactive-element": "../node_modules/@lit/reactive-element/reactive-element.js",
+              "@lit/reactive-element/": "../node_modules/@lit/reactive-element/"
+            }
+          }
+        </script>
+<script type="module" src="../src/main.js"></script>
+  </head>
+  <body>
+    <my-app-layout active-href="designs/index.html">
+      <section class="page-section" aria-label="Designs overview">
+        <h1>Designs</h1>
+        <p>
+          Browse ready-to-use compositions that showcase how components behave together in real
+          layouts. Duplicate them into Figma or reference the code snippets to accelerate builds.
+        </p>
+      </section>
+      <section class="page-section" aria-label="Featured layouts">
+        <my-page-header title="hello"></my-page-header>
+        <h2>Featured layouts</h2>
+        <div class="page-card-grid">
+          <my-card title="Dashboard Overview">
+            <my-badge label="Responsive"></my-badge>
+            <my-badge variant="brand" label="Analytics"></my-badge>
+          </my-card>
+          <my-card title="Marketing Hero">
+            <my-badge label="Storytelling"></my-badge>
+            <my-badge variant="brand" label="Brand"></my-badge>
+          </my-card>
+          <my-card title="Onboarding Flow">
+            <my-badge label="UX"></my-badge>
+            <my-badge variant="brand" label="Product"></my-badge>
+          </my-card>
+        </div>
+      </section>
+      <section class="page-section" aria-label="Design collections">
+        <h2>Collections</h2>
+        <div class="page-card-grid">
+          <my-card title="Landing page collection" href="./landing-page/index.html">
+            <p slot="body">
+              Composable hero, feature, and call-to-action patterns for marketing launches. Each
+              example maps to a code-ready Lit implementation.
+            </p>
+            <span slot="footer">Explore landing pages</span>
+          </my-card>
+          <my-card title="Dashboard layouts" href="./dashboard/index.html">
+            <p slot="body">
+              Data-dense surfaces optimised for responsive behaviour with guidance on adaptive
+              navigation and chart placements.
+            </p>
+            <span slot="footer">Review dashboard guidelines</span>
+          </my-card>
+        </div>
+      </section>
+    </my-app-layout>
+  </body>
+</html>

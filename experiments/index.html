@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Experiments · Lit Web Component Demo</title>
+    <link
+      rel="preload"
+      href="../styles/fonts/MaterialSymbolsSharp-VariableFont_FILL,GRAD,opsz,wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../styles/fonts/RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="../styles/global/base.css" />
+        <script type="importmap">
+          {
+            "imports": {
+              "lit": "../node_modules/lit/index.js",
+              "lit/": "../node_modules/lit/",
+              "lit-html": "../node_modules/lit-html/lit-html.js",
+              "lit-html/": "../node_modules/lit-html/",
+              "lit-html/is-server.js": "../node_modules/lit-html/is-server.js",
+              "lit-element": "../node_modules/lit-element/lit-element.js",
+              "lit-element/": "../node_modules/lit-element/",
+              "@lit/reactive-element": "../node_modules/@lit/reactive-element/reactive-element.js",
+              "@lit/reactive-element/": "../node_modules/@lit/reactive-element/"
+            }
+          }
+        </script>
+<script type="module" src="../src/main.js"></script>
+  </head>
+  <body>
+    <my-app-layout active-href="experiments/index.html">
+      <section class="page-section" aria-label="Experiments overview">
+        <h1>Experiments</h1>
+        <p>
+          Explore prototypes that validate component ideas before they graduate into the design
+          system. Expect rapid iteration, rough edges, and implementation notes.
+        </p>
+      </section>
+      <section class="page-section" aria-label="Latest experiments">
+        <h2>Latest experiments</h2>
+        <div class="page-card-grid">
+          <my-card title="Voice-assisted nav">
+            <my-badge label="Prototype"></my-badge>
+            <my-badge variant="brand" label="In review"></my-badge>
+          </my-card>
+          <my-card title="Adaptive theme switcher">
+            <my-badge label="Prototype"></my-badge>
+            <my-badge variant="brand" label="Testing"></my-badge>
+          </my-card>
+          <my-card title="Multi-modal input">
+            <my-badge label="Prototype"></my-badge>
+            <my-badge variant="brand" label="Discovery"></my-badge>
+          </my-card>
+        </div>
+      </section>
+      <section class="page-section" aria-label="Experiment collections">
+        <h2>Experiment logs</h2>
+        <div class="page-card-grid">
+          <my-card title="AI collaboration surface" href="./ai-collaboration/index.html">
+            <p slot="body">
+              Notes on pairing conversational AI with structured UI controls for workflow
+              automation.
+            </p>
+            <span slot="footer">Open experiment log</span>
+          </my-card>
+          <my-card title="Spatial interface tests" href="./spatial-interface/index.html">
+            <p slot="body">
+              Sensor-driven interactions and feedback loops for mixed-reality dashboards.
+            </p>
+            <span slot="footer">Browse spatial tests</span>
+          </my-card>
+        </div>
+      </section>
+    </my-app-layout>
+  </body>
+</html>

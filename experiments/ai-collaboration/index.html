@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Collaboration Surface · Experiments</title>
+    <link
+      rel="preload"
+      href="../../styles/fonts/MaterialSymbolsSharp-VariableFont_FILL,GRAD,opsz,wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../../styles/fonts/RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="../../styles/global/base.css" />
+        <script type="importmap">
+          {
+            "imports": {
+              "lit": "../../node_modules/lit/index.js",
+              "lit/": "../../node_modules/lit/",
+              "lit-html": "../../node_modules/lit-html/lit-html.js",
+              "lit-html/": "../../node_modules/lit-html/",
+              "lit-html/is-server.js": "../../node_modules/lit-html/is-server.js",
+              "lit-element": "../../node_modules/lit-element/lit-element.js",
+              "lit-element/": "../../node_modules/lit-element/",
+              "@lit/reactive-element": "../../node_modules/@lit/reactive-element/reactive-element.js",
+              "@lit/reactive-element/": "../../node_modules/@lit/reactive-element/"
+            }
+          }
+        </script>
+<script type="module" src="../../src/main.js"></script>
+  </head>
+  <body>
+    <my-app-layout active-href="experiments/index.html">
+      <my-page-header
+        title="AI collaboration surface"
+        subtitle="Exploring new ideas and concepts"
+      ></my-page-header>
+      <section class="page-section" aria-label="Experiment overview">
+        <p><a href="../index.html">&larr; Back to Experiments</a></p>
+        <h1>AI collaboration surface</h1>
+        <p>
+          Investigating how conversational agents can pair with deterministic UI controls to help
+          teams automate repetitive tasks while keeping clear audit trails.
+        </p>
+      </section>
+      <section class="page-section" aria-label="Experiment notes">
+        <h2>Observation log</h2>
+        <div class="page-card-grid">
+          <my-card title="Guided task execution">
+            <my-badge label="Research"></my-badge>
+            <my-badge variant="brand" label="Workflow"></my-badge>
+          </my-card>
+          <my-card title="Spec language">
+            <my-badge label="Prompting"></my-badge>
+            <my-badge variant="brand" label="Design"></my-badge>
+          </my-card>
+          <my-card title="Failure handling">
+            <my-badge label="Fallback"></my-badge>
+            <my-badge variant="brand" label="Recovery"></my-badge>
+          </my-card>
+        </div>
+      </section>
+    </my-app-layout>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resources · Lit Web Component Demo</title>
+    <link
+      rel="preload"
+      href="../styles/fonts/MaterialSymbolsSharp-VariableFont_FILL,GRAD,opsz,wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../styles/fonts/RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="../styles/global/base.css" />
+        <script type="importmap">
+          {
+            "imports": {
+              "lit": "../node_modules/lit/index.js",
+              "lit/": "../node_modules/lit/",
+              "lit-html": "../node_modules/lit-html/lit-html.js",
+              "lit-html/": "../node_modules/lit-html/",
+              "lit-html/is-server.js": "../node_modules/lit-html/is-server.js",
+              "lit-element": "../node_modules/lit-element/lit-element.js",
+              "lit-element/": "../node_modules/lit-element/",
+              "@lit/reactive-element": "../node_modules/@lit/reactive-element/reactive-element.js",
+              "@lit/reactive-element/": "../node_modules/@lit/reactive-element/"
+            }
+          }
+        </script>
+<script type="module" src="../src/main.js"></script>
+  </head>
+  <body>
+    <my-app-layout active-href="resources/index.html">
+      <section class="page-section" aria-label="Resources overview">
+        <h1>Resources</h1>
+        <p>
+          Find support material for onboarding teams, referencing design tokens, and embedding
+          components into product surfaces.
+        </p>
+      </section>
+      <section class="page-section" aria-label="Resource categories">
+        <h2>Resource collections</h2>
+        <div class="page-card-grid">
+          <my-card title="Starter kits">
+            <my-badge label="Figma"></my-badge>
+            <my-badge variant="brand" label="Code"></my-badge>
+          </my-card>
+          <my-card title="Accessibility checklists">
+            <my-badge label="Guidelines"></my-badge>
+            <my-badge variant="brand" label="WCAG"></my-badge>
+          </my-card>
+          <my-card title="Release notes">
+            <my-badge label="Changelog"></my-badge>
+            <my-badge variant="brand" label="Updates"></my-badge>
+          </my-card>
+        </div>
+      </section>
+      <section class="page-section" aria-label="Resource deep dives">
+        <h2>Guides</h2>
+        <div class="page-card-grid">
+          <my-card title="Starter kit setup" href="./starter-kit/index.html">
+            <p slot="body">
+              Tooling assumptions, Storybook configuration, and recommended workflows for adopting
+              the component library.
+            </p>
+            <span slot="footer">Read setup guide</span>
+          </my-card>
+          <my-card title="Token handoff" href="./token-handoff/index.html">
+            <p slot="body">
+              Tips for aligning between design and code when introducing new tokens or altering
+              existing aliases.
+            </p>
+            <span slot="footer">Review handoff process</span>
+          </my-card>
+        </div>
+      </section>
+    </my-app-layout>
+  </body>
+</html>

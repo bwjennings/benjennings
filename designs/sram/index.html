@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Don't make it simple · SRAM</title>
+    <link
+      rel="preload"
+      href="../../styles/fonts/MaterialSymbolsSharp-VariableFont_FILL,GRAD,opsz,wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../../styles/fonts/RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="../../styles/global/base.css" />
+        <script type="importmap">
+          {
+            "imports": {
+              "lit": "../../node_modules/lit/index.js",
+              "lit/": "../../node_modules/lit/",
+              "lit-html": "../../node_modules/lit-html/lit-html.js",
+              "lit-html/": "../../node_modules/lit-html/",
+              "lit-html/is-server.js": "../../node_modules/lit-html/is-server.js",
+              "lit-element": "../../node_modules/lit-element/lit-element.js",
+              "lit-element/": "../../node_modules/lit-element/",
+              "@lit/reactive-element": "../../node_modules/@lit/reactive-element/reactive-element.js",
+              "@lit/reactive-element/": "../../node_modules/@lit/reactive-element/"
+            }
+          }
+        </script>
+<script type="module" src="../../src/main.js"></script>
+  </head>
+  <body>
+    <my-app-layout active-href="designs/index.html">
+      <section class="page-section" aria-label="Case study">
+        <p>
+          <my-button icon="arrow_back" href="../index.html">Back</my-button>
+        </p>
+
+        <my-page-header title="Don't make it simple">
+          <my-badge label="Design" icon="edit" variant="brand"></my-badge>
+          <my-badge label="UX" icon="edit" variant="brand"></my-badge>
+        </my-page-header>
+      </section>
+
+      <section class="page-section prose" aria-label="Case study content">
+        <div>
+          <h2 class="text-heading sm">Introduction</h2>
+          <p class="text-body">
+            Police Legal Sciences has provided forensic analysis and expert testimony
+            for law enforcement agencies across the region for over two decades. Their
+            reputation depends on precision, thoroughness, and the ability to communicate
+            complex technical findings in court.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-heading sm">The problem</h2>
+          <p class="text-body">
+            With their growth, managing case files, chain of custody documentation, and
+            evidence tracking became increasingly difficult. Their existing system required
+            significant manual data entry and left room for critical errors. They needed
+            a solution that could handle the complexity of their work without oversimplifying
+            the process.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-heading sm">Content mapping</h2>
+          <p class="text-body">
+            We began by mapping every step of their forensic workflow, from initial evidence
+            receipt through final report delivery. This revealed numerous decision points,
+            regulatory requirements, and quality control checkpoints that couldn't be
+            eliminated or simplified. The system needed to embrace this complexity, not
+            hide from it.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-heading sm">Finding the right amount of complexity</h2>
+          <p class="text-body">
+            Rather than trying to make the interface "simple," we focused on making it
+            clear and comprehensive. Each workflow step shows exactly what's required,
+            why it matters, and what happens next. Context-sensitive help appears exactly
+            when needed. The interface doesn't pretend the work is simple—it helps users
+            navigate the necessary complexity with confidence.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-heading sm">Example of necessary complexity</h2>
+          <p class="text-body">
+            The chain of custody tracking includes detailed timestamps, handler information,
+            storage conditions, and access logs. While this creates a dense interface,
+            every field serves a legal and operational purpose. Our design organizes this
+            information hierarchically and provides clear visual relationships between
+            connected data points, making the complexity manageable without reducing it.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-heading sm">Other resources</h2>
+          <p class="text-body">
+            This case study demonstrates how embracing necessary complexity can lead to
+            more effective solutions than forced simplification. For more examples of
+            complexity management in professional software, explore our other case studies
+            and design patterns.
+          </p>
+        </div>
+      </section>
+    </my-app-layout>
+  </body>
+</html>

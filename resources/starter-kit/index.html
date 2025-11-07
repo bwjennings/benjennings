@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Starter Kit Setup · Resources</title>
+    <link
+      rel="preload"
+      href="../../styles/fonts/MaterialSymbolsSharp-VariableFont_FILL,GRAD,opsz,wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../../styles/fonts/RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="../../styles/global/base.css" />
+        <script type="importmap">
+          {
+            "imports": {
+              "lit": "../../node_modules/lit/index.js",
+              "lit/": "../../node_modules/lit/",
+              "lit-html": "../../node_modules/lit-html/lit-html.js",
+              "lit-html/": "../../node_modules/lit-html/",
+              "lit-html/is-server.js": "../../node_modules/lit-html/is-server.js",
+              "lit-element": "../../node_modules/lit-element/lit-element.js",
+              "lit-element/": "../../node_modules/lit-element/",
+              "@lit/reactive-element": "../../node_modules/@lit/reactive-element/reactive-element.js",
+              "@lit/reactive-element/": "../../node_modules/@lit/reactive-element/"
+            }
+          }
+        </script>
+<script type="module" src="../../src/main.js"></script>
+  </head>
+  <body>
+    <my-app-layout active-href="resources/index.html">
+      <section class="page-section" aria-label="Guide overview">
+        <p><a href="../index.html">&larr; Back to Resources</a></p>
+        <h1>Starter kit setup</h1>
+        <p>
+          Configure Storybook, install dependencies, and prepare deployment checks to bring the
+          component library into new projects with minimal friction.
+        </p>
+      </section>
+      <section class="page-section" aria-label="Setup steps">
+        <h2>Quick start</h2>
+        <ol>
+          <li>Install dependencies with <code>npm install</code>.</li>
+          <li>Run <code>npm run storybook</code> to verify the component catalog.</li>
+          <li>Integrate the registry by importing <code>src/main.js</code> in your entrypoint.</li>
+        </ol>
+      </section>
+    </my-app-layout>
+  </body>
+</html>

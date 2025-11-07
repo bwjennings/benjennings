@@ -1,0 +1,25 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Getting Started/Overview" />
+
+# Lit Component Storybook
+
+This Storybook mirrors the component authoring guide that lives in the repository. Each story renders the custom elements defined under `src/components/` so you can review styles, states, and layout permutations without wiring them into the demo pages first.
+
+## Add a New Component Story
+
+1. Create the component under `src/components/<feature>/` following the authoring guide.
+2. Register the tag in `src/components/index.js` so the global entry can load it.
+3. Add a matching story in `src/stories/<tag-name>.stories.js` and export at least one example. Use the existing stories as a template—return a custom element instance from the `render` function so properties and slots stay reactive.
+
+## Design Tokens and Styling
+
+- Global tokens live in `styles/global/base.css` and are already imported in the Storybook preview.
+- Component-level styles should stay colocated with the component module. The stories only concern themselves with inputs (properties, attributes, slots).
+- When you tweak tokens, re-run Storybook and the HTML demo to ensure both environments stay in sync.
+
+## Manual Verification Checklist
+
+- Interact with the controls panel to confirm each public property behaves as expected.
+- Open the **Accessibility** and **Viewport** panels to test contrasted themes and responsive behavior.
+- Note any gaps (TODOs, missing tokens, follow-up tasks) in your commit or handoff so the system stays traceable.
