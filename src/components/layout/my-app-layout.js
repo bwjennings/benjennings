@@ -2,6 +2,14 @@ import {LitElement, html, css, nothing} from 'lit';
 
 import '../navigation/my-nav.js';
 
+const deriveBaseHref = () => {
+  try {
+    return import.meta?.env?.BASE_URL ?? '';
+  } catch (error) {
+    return '';
+  }
+};
+
 /**
  * Application layout shell that pairs the primary navigation with a content slot.
  */
@@ -72,6 +80,7 @@ export class MyAppLayout extends LitElement {
     navItems: {type: Array, attribute: false},
     navSize: {type: String, attribute: 'nav-size', reflect: true, useDefault: true},
     activeHref: {type: String, attribute: 'active-href'},
+    baseHref: {type: String, attribute: 'base-href'},
   };
 
   constructor() {
@@ -80,6 +89,7 @@ export class MyAppLayout extends LitElement {
     this.navItems = null;
     this.navSize = 'desktop';
     this.activeHref = '';
+    this.baseHref = deriveBaseHref();
   }
 
   render() {
@@ -101,12 +111,14 @@ export class MyAppLayout extends LitElement {
   }
 
   #renderDefaultNav(navItems, activeHref) {
+    const baseHref = this.baseHref ?? '';
     if (navItems) {
       return html`
         <my-nav
           label=${this.navLabel || nothing}
           item-size=${this.navSize || nothing}
           active-href=${activeHref || nothing}
+          base-href=${baseHref || nothing}
           .items=${navItems}
         ></my-nav>
       `;
@@ -117,6 +129,7 @@ export class MyAppLayout extends LitElement {
         label=${this.navLabel || nothing}
         item-size=${this.navSize || nothing}
         active-href=${activeHref || nothing}
+        base-href=${baseHref || nothing}
       ></my-nav>
     `;
   }
